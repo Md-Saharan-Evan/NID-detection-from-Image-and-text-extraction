@@ -1,0 +1,6 @@
+path: /Users/mdsaharanevan/Desktop/SoftBD_Task/data
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names: ['NID']
