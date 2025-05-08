@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 Data folder contails 2 folder 1 for images and another is labels
 
-4. create the dataset.yaml file
+4. create the dataset.yaml file 
 
 
 5. Training the YOLOv8 Model
