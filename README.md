@@ -1,6 +1,11 @@
 NID-detection-from-Image-and-text-extraction
 This project performs(NID) detection from an image using YOLOv8 and extracts key information such as Name, NID Number, Date of Birth, and Address using OCR (Tesseract).
 
+Data preparation and preprocessing-
+--> Used open source Images
+--> Used cvat for data annotation and labeling 
+--> used yolo format label for training
+
 
 1. Create a Virtual Environment
 python -m venv env
@@ -14,10 +19,11 @@ pip install -r requirements.txt
 
 Data folder contails 2 folder 1 for images and another is labels
 
-4. create the dataset.yaml file 
+4. create the dataset.yaml file
+   You can simply run src/dataset.py file to split dataset and generate yaml file 
 
 
-5. Training the YOLOv8 Model
+6. Training the YOLOv8 Model
 Use the ultralytics CLI or Python API:
 
 yolo detect train data=data/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
